@@ -1,0 +1,60 @@
+.plans
+{
+    margin-top: 300px;
+}
+.plan_header{
+    text-align: center;
+}
+.plans__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    z-index: 2;
+    
+}
+.planType
+{
+    display: inline;
+    background-color: #c1c1c1;
+    color: #223b76;
+    border-radius: 10px;
+
+}
+.plans h3{
+    margin-bottom: 0.8rem;
+
+
+
+}
+.plans small
+{
+    margin-bottom: 2rem;
+  color: #000000;
+
+}
+.plan  h1{
+    color: #000000;
+    display: inline;
+}
+.plan h2{
+    display: inline;
+    color: #000000
+}
+.plan h4{
+    margin-top: 1rem;
+    color: #000000
+}
+.plan p
+{
+    margin-top:1rem;
+    color: #000000
+}
+.plan p.disabled{
+    color: #686060;
+    opacity: 0.5rem;
+}
+.plan button
+{
+    margin-top:3rem;
+    cursor: pointer;
+}

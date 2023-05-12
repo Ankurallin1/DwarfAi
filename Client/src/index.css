@@ -1,0 +1,219 @@
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+:root{
+  --primary-hue:210;
+  --color-primary:hsl(240, 100%, 100%);
+  --color-primary-variant:hsl(var(--primary-hue,100%,65%));
+  --color-secondary:#3d2baf;
+  --color-grey-100:hsl(240,47%,94%);
+  --color-grey-200:hsl(240,26%,75%);
+  --color-grey-300:hsl(240,24%,64%);
+  --color-grey-400:hsl(240,16%,41%);
+  --color-grey-500:hsl(240, 15%, 94%);
+  --color-grey-600:hsl(0, 0%, 100%);
+  --color-grey-variant:hsl(0, 3%, 77%);
+  --container-width-lg:80%;
+  --container-width-md:90%;
+
+  --transition:all 500ms ease;
+}
+.LoGo{
+  width: 50px;
+  height: 50px;
+  background:transparent;
+padding-right: 20px;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.container
+{
+  width: 80%;
+  max-width: 1920px;
+  margin-inline:auto;
+}
+
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+img{
+  display: block;
+  object-fit: cover;
+  width:100%;
+}
+.vision
+{
+    margin-top: 6%;
+}
+@media screen and (max-width:1024px)
+{
+    .vision{
+        margin-top:80px ;
+    }
+}
+
+
+.btn{
+  color: var(--color-grey-100);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background:#1496bd;
+  border-radius: 1.5rem;
+  transition: var(--transition);
+  box-shadow: 0px 1px 2px #bcb9b9;
+  z-index: 1;
+}
+.btn:hover{
+  background:#fff;
+  color: #1496bd;
+  box-shadow: 0px 0px 6px #bcb9b9;
+  transition: var(--transition);
+
+}
+.btn.lg{
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+
+}
+.btn.sm{
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+.btn.sm:hover{
+  background:var(--color-secondary);
+}
+.LoGo{
+  width: 50px;
+  height: 50px;
+  background:transparent;
+}
+
+
+
+section{
+  margin-top: 10rem;
+}
+.programs__container{
+  margin-left: 170px;
+
+}
+.section__head{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section__head span{
+  background:var(--color-grey-500);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+}
+.card{
+  background:var(--color-grey-500);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  box-shadow: 0px 0px 6px #000000de;
+}
+
+.card span{
+  width: 3rem;
+  height: 3rem;
+  background:var(--color-primary);
+  color: var(--color-grey-100);
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom:1.5rem ;
+  margin-inline:auto ;
+  border-radius: 1rem;
+}
+.card:hover span{
+  background:var(--color-secondary);
+  color:var(--color-grey-600)
+}
+.card small{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 300;
+}
+
+
+
+
+
+.header{
+  margin-top: 5rem;
+  height: 20rem;
+  overflow: hidden;
+  border-bottom: 2px solid var(--color-grey-400);
+}
+.header__container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background:black;
+}
+.header__container-bg{
+  position: absolute;
+  width: 100%;
+}
+.header__container-bg img{
+  opacity: 0.9rem;
+}
+.header__content{
+  position: relative;
+  /* width: 44px; */
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-grey-100);
+}
+.header__content h2{
+  margin-bottom: 1rem;
+}
+.header__content p{
+  color: rgba(255,255,255,0.7);
+}
+
+
+
+@media screen and (max-width:1024px)
+{
+  .container{
+    width: var(--container-width-md);
+  }
+}
